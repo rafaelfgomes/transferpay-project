@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bash:
+    volumes:
+      - ./:/app
+    image: transfer-app_bash
+    container_name: transfer-app_bash
+    build:
+      context: .
+      dockerfile: ./docker/bash/Dockerfile
