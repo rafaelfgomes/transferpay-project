@@ -13,6 +13,14 @@
 |
 */
 
+$prefix = 'api';
+$version = env('API_VERSION');
+
 $router->get('/', function () use ($router) {
     return env('APP_NAME');
+});
+
+
+$router->group([ 'prefix' => $prefix . '/' . $version ], function () use ($router) {
+    $router->get('health-check', 'HealthController@index');
 });
