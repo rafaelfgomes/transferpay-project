@@ -35,7 +35,6 @@ services:
         APPENV: "local"
         DBNAME: "${DB_NAME}"
         DBPASS: "${DB_PASSWD}"
-        DBPORT: "${DB_PORT}"
         DBUSER: "${DB_USER}"
         TIMEZONE: "${TIMEZONE}"
     depends_on:

@@ -9,7 +9,7 @@ fi
 cp .env.sample .env
 
 #folderName=$(basename $(pwd))
-prefixContainerName=transfer-app
+prefixContainerName=transferpay
 
 apiContainerName=$prefixContainerName"_api"
 mariadbContainerName=$prefixContainerName"_db"
@@ -24,7 +24,7 @@ dbName=transferpay-db
 dbUsername=root
 dbPassword=p@ssw0rd
 
-apiName=TransferApp
+apiName=TransferPay
 apiUrl=0.0.0.0
 ######################################
 

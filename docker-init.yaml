@@ -4,8 +4,8 @@ services:
   bash:
     volumes:
       - ./:/app
-    image: transfer-app_bash
-    container_name: transfer-app_bash
+    image: transferpay_bash
+    container_name: transferpay_bash
     build:
       context: .
       dockerfile: ./docker/bash/Dockerfile
